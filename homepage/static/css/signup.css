@@ -1,0 +1,99 @@
+body{
+  background-color: #02081d;
+  color: white;
+}
+h1{
+  text-align: center;
+} 
+#age{
+  width: 50%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+
+}
+#bloodgroup{
+  width: 20%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+div.box{
+
+color:white;
+
+position: relative;
+justify-content: center;
+flex-direction: column;
+display:flex;
+
+margin: auto;
+width: 40%;
+padding: 10px;
+padding-left: 3%;
+padding-right: 3%;
+font-family: inherit;
+border: 2px solid rgb(194, 189, 189);
+
+}
+
+div button{
+
+
+position: relative;
+justify-content: center;
+flex-direction: column;
+display:flex;
+
+margin: auto;
+
+font-family: inherit;
+border: 2px solid rgb(194, 189, 189);
+
+
+
+}
+
+input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+button {
+background-color: #171231;
+color: hsl(227, 24%, 93%);
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+text-align: center;
+
+}
+
+textarea{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+
+
+
+}
+
+button:hover{
+border: 1px solid #777;
+color: rgb(67, 219, 219);
+}

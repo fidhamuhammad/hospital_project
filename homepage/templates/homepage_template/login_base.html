@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        section {
+            background-color: white;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .login {
+            display: grid;
+            height: 600px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 100px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 80px;
+        }
+
+        .dr {
+            grid-area: 2/2/3/3;
+        }
+
+        .pt {
+            grid-area: 2/3/3/4;
+        }
+
+        .st {
+            grid-area: 2/4/3/5;
+        }
+
+        .dr,
+        .pt,
+        .st {
+            height: 140px;
+            width: 250px;
+            border: 1px solid #223a66;
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 30px;
+            border-radius: 50px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            color: #fff;
+            background-color: #223a66;
+        }
+
+        .dr:hover,
+        .pt:hover,
+        .st:hover {
+            background: #cbd0d8;
+            border-color: #cbd0d8;
+        }
+
+        .login a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .login a:hover {
+            color: #052765;
+        }
+
+        .heading {
+            position: fixed;
+            top: 0;
+        }
+
+        /* h1 {
+            text-align: center;
+            color: rgb(5, 5, 117);
+            padding-top: 50px;
+            padding-left: 450px;
+        } */
+
+        .heading h1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-left: 220px;
+            color: rgb(8, 8, 142);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+        <div class="heading">
+            <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
+        </div>
+
+        <div class="container-fluid login">
+
+            <div class="dr"><a href="{% url 'home:login' %}">
+                    <h2> DOCTOR</h2>
+                </a></div>
+            <div class="pt"><a href="{% url 'home:login' %}">
+                    <h2> PATIENT</h2>
+                </a> </div>
+            <div class="st"><a href="{% url 'home:login' %}">
+                    <h2> STAFF</h2>
+                </a></div>
+        </div>
+    </section>
+</body>
+
+</html>

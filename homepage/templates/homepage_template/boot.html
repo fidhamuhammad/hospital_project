@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        div {
+            border: solid 1px aqua;
+            background-color: rgb(99, 31, 168);
+            color: rgb(236, 236, 242);
+            margin-top: 50px 50px; 
+        }
+
+        .main {
+            display: grid;
+            height: 100%;
+            /* height: 100vh; */
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 25px 25px;
+            margin: 100px;
+            padding: 50px;
+            /* margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            margin-right: 100px; */
+
+        }
+
+        .a {
+            grid-area: 1/1/2/5;
+        }
+
+        .b {
+            grid-area: 2/1/3/4;
+        }
+
+        .c {
+            grid-area: 2/4/4/5;
+        }
+
+        .d {
+            grid-area: 3/1/4/2;
+        }
+
+        .e {
+            grid-area: 3/2/4/3;
+        }
+
+        .f {
+            grid-area: 3/3/4/4;
+        }
+
+        .g {
+            grid-area: 4/1/5/5;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/service/service-2.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/service/service-1.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/service/service-3.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+
+    <div class="main">
+        <div class="a">heading</div>
+        <div class="b">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum adipisci consequatur hic
+                tenetur animi officiis vero temporibus. Laboriosam asperiores dignissimos, necessitatibus quibusdam
+                expedita nulla repudiandae temporibus itaque laudantium quasi aliquam laborum omnis eveniet in sint
+                voluptas neque id ut quo sequi error ipsa iste qui. Quaerat, omnis? Sint, quibusdam.</p>
+        </div>
+        <div class="c">
+            side bar
+        </div>
+        <div class="d">img1</div>
+        <div class="e">img2</div>
+        <div class="f">img3</div>
+        <div class="g">footer</div>
+    </div>
+
+
+</body>
+
+</html>
